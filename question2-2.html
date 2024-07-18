@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-page">
+        <div class="question-text">내가 좋아하는 애인의 성격은?</div>
+        <div class="question-image"><img src="털사.png"></div>
+        <div class="button-container">
+            <button class="survey-button yes" onclick="navigate('yes')">털털하고 가식 없는 성격</button>
+            <button class="survey-button no" onclick="navigate('no')">사려감 넘치고 신중한 성격</button>
+        </div>
+    </div>
+
+    <script>
+        function navigate(answer) {
+            if (answer === 'yes') {
+                window.location.href = 'question3-3.html';
+            } else {
+                window.location.href = 'question3-4.html';
+            }
+        }
+    </script>
+</body>
+</html>

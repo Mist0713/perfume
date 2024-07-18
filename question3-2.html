@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-page">
+        <div class="question-text">내가 원하는 데이트 장소는?</div>
+        <div class="question-image"><img src="영카.png"></div>
+        <div class="button-container">
+            <button class="survey-button yes" onclick="navigate('yes')">영화관</button>
+            <button class="survey-button no" onclick="navigate('no')">카페</button>
+        </div>
+    </div>
+
+    <script>
+        function navigate(answer) {
+            if (answer === 'yes') {
+                window.location.href = 'result-peach.html';
+            } else {
+                window.location.href = 'result-peach.html';
+            }
+        }
+    </script>
+</body>
+</html>

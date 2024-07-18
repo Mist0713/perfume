@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-page">
+        <div class="question-text">내가 좋아하는 성향의 애인은?</div>
+        <div class="question-image"><img src="활수.png", width="500px"></div>
+        <div class="button-container">
+            <button class="survey-button yes" onclick="navigate('yes')">활발한 사람</button>
+            <button class="survey-button no" onclick="navigate('no')">소심한 사람</button>
+        </div>
+    </div>
+
+    <script>
+        function navigate(answer) {
+            if (answer === 'yes') {
+                window.location.href = 'question3-1.html';
+            } else {
+                window.location.href = 'question3-2.html';
+            }
+        }
+    </script>
+</body>
+</html>

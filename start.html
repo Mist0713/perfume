@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나에게 맞는 향수는?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-page">
+        <div class="question-text">나에게 어울리는 향은?</div>
+        <div class="question-image"><img src="https://m.esteelauder.co.kr/media/export/cms/MPP%20Re-design/SC_GLO166-Global-Luxury_Fragrance_Repro-mob-tout-1.jpg"></div>
+        <!-- <div class="question-image"><img src="IDDFFF.png"></div> -->
+        <div class="button-container">
+            <button class="survey-button yes" onclick="navigate('yes')">시작하기</button>
+        </div>
+    </div>
+    <script>
+        function navigate(answer) {
+            if (answer === 'yes') {
+                window.location.href = 'question1.html';
+            }
+        }
+    </script>
+</body>
+</html>

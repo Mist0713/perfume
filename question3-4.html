@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-page">
+        <div class="question-text">내가 생각하는 나의 성격은?</div>
+        <div class="question-image"><img src="영카.png"></div>
+        <div class="button-container">
+            <button class="survey-button yes" onclick="navigate('yes')">내향적인 성격</button>
+            <button class="survey-button no" onclick="navigate('no')">외향적인 성격</button>
+        </div>
+    </div>
+
+    <script>
+        function navigate(answer) {
+            if (answer === 'yes') {
+                window.location.href = 'result-ja.html';
+            } else {
+                window.location.href = 'result-straw.html';
+            }
+        }
+    </script>
+</body>
+</html>
