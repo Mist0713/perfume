@@ -1,0 +1,97 @@
+/* styles.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8); */
+body {
+    /* background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4); */
+    background: linear-gradient(to right top, #D16BA5, #86A8E7, #5FFBF1, #aa8fd8);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* .survey-page {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+.survey-page {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(''); /* 배경 이미지 경로 */
+    background-size: cover; /* 이미지 크기 조절 */
+    background-position: center; /* 이미지 위치 조절 */
+    background-repeat: no-repeat; /* 이미지 반복 안함 */
+}
+
+.question-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.result-text {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.question-image{
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.survey-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: #000000aa;
+    border-radius: 4px;
+    border-width: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.survey-button:hover {
+    background-color: #383838;
+    color:rgba(255, 255, 255, 0.9);
+}
+
+.survey-button.no {
+    background-color: #dc3545;
+}
+
+.survey-button.no:hover {
+    background-color: #a71d2a;
+}

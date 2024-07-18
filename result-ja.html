@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결과 확인</title>
+    <link rel="stylesheet" href="result-style.css">
+</head>
+<body>
+    <div class="survey-page">
+        <div class="question-text">나에게 어울리는 향은</div>
+        <div><img src="ja.png", width="300px"></div>
+        <div class="result-text">쟈스민 향</div>
+        <div class="button-container">
+            <button class="survey-button yes" onclick="navigate('yes')">처음으로 돌아가기</button>
+        </div>
+    </div>
+
+    <script>
+        function navigate(answer) {
+            if (answer === 'yes') {
+                window.location.href = 'start.html';
+            }
+        }
+    </script>
+</body>
+</html>

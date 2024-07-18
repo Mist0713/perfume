@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-page">
+        <div class="question-text">만약 애인과 여행을 간다면 내가 갈 장소는?</div>
+        <div class="question-image"><img src="들산.png", width="500px"></div>
+        <div class="button-container">
+            <button class="survey-button yes" onclick="navigate('yes')">광활한 들판</button>
+            <button class="survey-button no" onclick="navigate('no')">깊은 산속</button>
+        </div>
+    </div>
+
+    <script>
+        function navigate(answer) {
+            if (answer === 'yes') {
+                window.location.href = 'result-apple.html';
+            } else {
+                window.location.href = 'result-bae.html';
+            }
+        }
+    </script>
+</body>
+</html>
